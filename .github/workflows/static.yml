@@ -1,0 +1,19 @@
+name: Deploy Angular to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Angular App
+        uses: bitovi/github-actions-angular-to-github-pages@v1.0.0
+        with:
+          checkout: true
+          path: dist/teams  # Replace with your actual project name from angular.json
+          install_command: npm install
+          build_command: npm run build -- --base-href=/teamprofile/
