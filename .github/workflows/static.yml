@@ -3,11 +3,12 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main
 
 permissions:
-  id-token: write
   contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -18,6 +19,6 @@ jobs:
         uses: bitovi/github-actions-angular-to-github-pages@v1.0.0
         with:
           checkout: true
-          path: dist/teams  # Replace with your actual project name from angular.json
+          path: dist/teams
           install_command: npm install
           build_command: npm run build -- --base-href=/teamprofile/
