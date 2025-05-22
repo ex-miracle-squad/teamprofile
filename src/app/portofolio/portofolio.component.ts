@@ -35,6 +35,11 @@ export class PortofolioComponent {
       title: 'Payment Aggregator',
       description: 'Implemented a payment aggregator system to unify multiple payment gateways and provide seamless transaction processing.',
       image: 'https://storage.googleapis.com/a1aa/image/cad2ff30-480c-4059-c9a9-35c3070cc4f9.jpg'
+    },
+    {
+      title: 'AI Shopping Assistant',
+      description: 'Built an AI-powered shopping assistant to provide personalized product recommendations and streamline the shopping experience.',
+      image: 'https://storage.googleapis.com/a1aa/image/cad2ff30-480c-4059-c9a9-35c3070cc4f9.jpg'
     }
   ];
 }

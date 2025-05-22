@@ -36,6 +36,11 @@ export class ServicesComponent {
       title: 'IT Consulting',
       description: 'Expert guidance on technology strategy, implementation, and optimization for your business.',
       icon: 'fas fa-comments'
+    },
+    {
+      title: 'AI Integration',
+      description: 'Creating and integrating AI assistants to streamline and enhance your business processes.',
+      icon: 'fas fa-brain'
     }
   ]
 }
