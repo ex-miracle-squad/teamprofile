@@ -17,5 +17,18 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'teams';
+  isAtTop = true;
 
+  ngOnInit() {
+    window.addEventListener('scroll', () => {
+      this.isAtTop = window.scrollY === 0;
+    });
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }

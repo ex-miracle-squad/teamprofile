@@ -5,6 +5,12 @@
   <app-services></app-services>
   <app-portofolio></app-portofolio>
   <app-contact></app-contact>
+  <button 
+    class="fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600" 
+    [class.hidden]="isAtTop" 
+    (click)="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </main>
 <app-footer></app-footer>
 <router-outlet />

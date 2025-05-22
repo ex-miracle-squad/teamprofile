@@ -11,35 +11,40 @@
             <a 
                 class="hover:text-indigo-600 transition" 
                 href="#hero" 
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;" 
+                (click)="scrollToSection($event, 'hero')"
             >
                 Home
             </a>
             <a 
                 class="hover:text-indigo-600 transition" 
                 href="#team" 
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;" 
+                (click)="scrollToSection($event, 'team')"
             >
                 Our Expertise
             </a>
             <a 
                 class="hover:text-indigo-600 transition" 
                 href="#services" 
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;" 
+                (click)="scrollToSection($event, 'services')"
             >
                 Services
             </a>
             <a 
                 class="hover:text-indigo-600 transition" 
                 href="#portfolio" 
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;" 
+                (click)="scrollToSection($event, 'portfolio')"
             >
                 Portfolio
             </a>
             <a 
                 class="hover:text-indigo-600 transition" 
                 href="#contact" 
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;" 
+                (click)="scrollToSection($event, 'contact')"
             >
                 Contact
             </a>
@@ -63,6 +68,7 @@
             class="block px-6 py-3 text-gray-700 font-semibold hover:bg-indigo-50" 
             href="#hero" 
             style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+            (click)="scrollToSection($event, 'hero')"
         >
             Home
         </a>
@@ -70,6 +76,7 @@
             class="block px-6 py-3 text-gray-700 font-semibold hover:bg-indigo-50" 
             href="#team" 
             style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+            (click)="scrollToSection($event, 'team')"
         >
             Our Expertise
         </a>
@@ -77,6 +84,7 @@
             class="block px-6 py-3 text-gray-700 font-semibold hover:bg-indigo-50" 
             href="#services" 
             style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+            (click)="scrollToSection($event, 'services')"
         >
             Services
         </a>
@@ -84,6 +92,7 @@
             class="block px-6 py-3 text-gray-700 font-semibold hover:bg-indigo-50" 
             href="#portfolio" 
             style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+            (click)="scrollToSection($event, 'portfolio')"
         >
             Portfolio
         </a>
@@ -91,6 +100,7 @@
             class="block px-6 py-3 text-gray-700 font-semibold hover:bg-indigo-50" 
             href="#contact" 
             style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
+            (click)="scrollToSection($event, 'contact')"
         >
             Contact
         </a>
