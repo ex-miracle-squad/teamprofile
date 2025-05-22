@@ -6,58 +6,25 @@
         Our Services
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <!-- Service 1 -->
-        <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
-            <i
-                class="fas fa-code text-indigo-600 text-5xl mb-6"
-                style="color: #00fff7; filter: drop-shadow(0 0 6px #00fff7);"
-            ></i>
-            <h3
-                class="text-xl font-semibold mb-3"
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
-            >
-                Software Development
-            </h3>
-            <p class="text-gray-600" style="color: #a0f0f7;">
-                Custom software solutions tailored to your business needs, including
-                web and mobile applications.
-            </p>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
-            <i
-                class="fas fa-paint-brush text-indigo-600 text-5xl mb-6"
-                style="color: #00fff7; filter: drop-shadow(0 0 6px #00fff7);"
-            ></i>
-            <h3
-                class="text-xl font-semibold mb-3"
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
-            >
-                Design &amp; UX
-            </h3>
-            <p class="text-gray-600" style="color: #a0f0f7;">
-                User-centered design services to create engaging and intuitive digital
-                experiences.
-            </p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
-            <i
-                class="fas fa-bullhorn text-indigo-600 text-5xl mb-6"
-                style="color: #00fff7; filter: drop-shadow(0 0 6px #00fff7);"
-            ></i>
-            <h3
-                class="text-xl font-semibold mb-3"
-                style="color: #00fff7; text-shadow: 0 0 8px #00fff7;"
-            >
-                Digital Marketing
-            </h3>
-            <p class="text-gray-600" style="color: #a0f0f7;">
-                Strategies to boost your online presence, including SEO, social media,
-                and content marketing.
-            </p>
-        </div>
+        <ng-container *ngFor="let service of ourServices">
+            <div class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition">
+                <i
+                    [class]="service.icon"
+                    class="text-indigo-600 text-5xl mb-6"
+                    [style.color]="'#00fff7'"
+                    [style.filter]="'drop-shadow(0 0 6px #00fff7)'"
+                ></i>
+                <h3
+                    class="text-xl font-semibold mb-3"
+                    [style.color]="'#00fff7'"
+                    [style.textShadow]="'0 0 8px #00fff7'"
+                >
+                    {{ service.title }}
+                </h3>
+                <p class="text-gray-600" [style.color]="'#a0f0f7'">
+                    {{ service.description }}
+                </p>
+            </div>
+        </ng-container>
     </div>
 </section>
