@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 
 export class ApiService {
-    private baseUrl = 'https://n8n.ngode.app/webhook/inquiry'; // Replace with your API base URL
+    private baseUrl = 'https://n8n.ngode.app/webhook'; // Replace with your API base URL
 
     constructor(private http: HttpClient) {}
 
