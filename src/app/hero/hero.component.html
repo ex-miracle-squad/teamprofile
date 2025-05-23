@@ -10,8 +10,9 @@
             Ex Miracle is a tech collective crafting powerful, scalable, and future-ready digital products.
         </p>
         <a 
-            class="inline-block mt-6 px-8 py-3 rounded-md font-semibold text-black bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 shadow-lg transition" 
+            class="btn-primary" 
             href="#contact"
+            (click)="scrollToSection($event, 'contact')"
         >
             Start a project
         </a>
@@ -19,7 +20,7 @@
     <img 
         alt="Futuristic digital abstract illustration with glowing blue and cyan lines and shapes representing technology and innovation" 
         height="400" 
-        src="https://storage.googleapis.com/a1aa/image/294b23e5-d621-4063-6441-d6cbbf044fd8.jpg" 
+        src="./assets/images/hero.png" 
         width="600"
     />
 </section>

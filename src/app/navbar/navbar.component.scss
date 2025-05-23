@@ -1,17 +1,22 @@
 nav a:hover, nav a:focus, button:hover, button:focus {
-    color: #00d8d8;
-    text-shadow: 0 0 12px #00d8d8, 0 0 30px #00d8d8;
+    color: var(--secondary-color);
+    //text-shadow: 0 0 12px #00d8d8, 0 0 30px #00d8d8;
+  }
+
+  nav a {
+    color: var(--text-color);
+    //text-shadow: 0 0 12px #00d8d8, 0 0 30px #00d8d8;
   }
   header {
-    background: #0a0c14;
-    box-shadow: 0 0 25px #00fff7;
+    background: var(--background-color);
+    //box-shadow: 0 0 25px #00fff7;
     position: sticky;
     top: 0;
     z-index: 50;
-    border-bottom: 1px solid #00fff7;
+    //border-bottom: 1px solid #00fff7;
   }
   #mobile-menu {
-    background: #121421;
-    box-shadow: 0 0 20px #00fff7;
-    border-color: #00fff7;
+    background: var(--background-color);
+    //box-shadow: 0 0 20px #00fff7;
+    //border-color: #00fff7;
   }

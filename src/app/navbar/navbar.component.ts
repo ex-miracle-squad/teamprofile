@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ScrollService } from '../shared/scroll.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  constructor(private scrollService: ScrollService) {}
   isMobileMenuOpen = false;
   ngOnInit() {
     const menuBtn = document.getElementById('menu-btn');
@@ -27,9 +29,7 @@ export class NavbarComponent {
 
   scrollToSection(event: Event, sectionId: string) {
     event.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    this.toggleMenu();
+    this.scrollService.scrollToSection(sectionId);
   }
 }
